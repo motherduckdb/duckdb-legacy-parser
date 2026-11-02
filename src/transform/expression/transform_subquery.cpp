@@ -27,7 +27,7 @@ unique_ptr<ParsedExpression> Transformer::TransformSubquery(duckdb_libpgquery::P
 	case duckdb_libpgquery::PG_EXISTS_SUBLINK: {
 		subquery_expr->GetSubqueryTypeMutable() = SubqueryType::EXISTS;
 		subquery_expr->SubqueryMutable() = TransformSelectStmt(*root.subselect);
-		D_ASSERT(subquery_expr->subquery);
+		D_ASSERT(subquery_expr->Subquery());
 		break;
 	}
 	case duckdb_libpgquery::PG_ANY_SUBLINK:
@@ -54,7 +54,7 @@ unique_ptr<ParsedExpression> Transformer::TransformSubquery(duckdb_libpgquery::P
 			throw ParserException("ANY and ALL operators require one of =,<>,>,<,>=,<= comparisons!");
 		}
 		subquery_expr->SubqueryMutable() = TransformSelectStmt(*root.subselect);
-		D_ASSERT(subquery_expr->subquery);
+		D_ASSERT(subquery_expr->Subquery());
 		if (root.subLinkType == duckdb_libpgquery::PG_ALL_SUBLINK) {
 			// ALL sublink is equivalent to NOT(ANY) with inverted comparison
 			// e.g. [= ALL()] is equivalent to [NOT(<> ANY())]
@@ -70,7 +70,7 @@ unique_ptr<ParsedExpression> Transformer::TransformSubquery(duckdb_libpgquery::P
 		// no child expression to compare to
 		subquery_expr->GetSubqueryTypeMutable() = SubqueryType::SCALAR;
 		subquery_expr->SubqueryMutable() = TransformSelectStmt(*root.subselect);
-		D_ASSERT(subquery_expr->subquery);
+		D_ASSERT(subquery_expr->Subquery());
 		break;
 	}
 	case duckdb_libpgquery::PG_ARRAY_SUBLINK: {
@@ -80,7 +80,7 @@ unique_ptr<ParsedExpression> Transformer::TransformSubquery(duckdb_libpgquery::P
 		auto select_node = make_uniq<SelectNode>();
 
 		subquery_expr->SubqueryMutable() = TransformSelectStmt(*root.subselect);
-		D_ASSERT(subquery_expr->subquery);
+		D_ASSERT(subquery_expr->Subquery());
 
 		unique_ptr<ParsedExpression> array_agg_child;
 		optional_ptr<SelectNode> sub_select;
