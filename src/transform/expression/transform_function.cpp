@@ -7,7 +7,7 @@
 #include "duckdb/parser/expression/operator_expression.hpp"
 #include "duckdb/parser/expression/star_expression.hpp"
 #include "duckdb/parser/expression/window_expression.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 namespace duckdb {
 

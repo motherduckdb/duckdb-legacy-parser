@@ -1,5 +1,5 @@
 #include "duckdb/parser/statement/export_statement.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 namespace duckdb {
 

@@ -1,6 +1,6 @@
 #include "duckdb/parser/statement/delete_statement.hpp"
 #include "duckdb/parser/query_node/delete_query_node.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 namespace duckdb {
 

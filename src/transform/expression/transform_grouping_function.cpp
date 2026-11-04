@@ -1,4 +1,4 @@
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/expression/operator_expression.hpp"
 
 namespace duckdb {

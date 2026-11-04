@@ -4,7 +4,7 @@
 #include "duckdb/parser/expression/constant_expression.hpp"
 #include "duckdb/parser/parsed_data/create_index_info.hpp"
 #include "duckdb/parser/statement/create_statement.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 namespace duckdb {
 

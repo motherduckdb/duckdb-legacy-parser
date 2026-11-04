@@ -1,5 +1,5 @@
 #include "duckdb/parser/tableref/basetableref.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 namespace duckdb {
 

@@ -1,6 +1,6 @@
 #include "duckdb/parser/statement/explain_statement.hpp"
 #include "duckdb/main/profiler/profiler_print_format.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/expression/constant_expression.hpp"
 
 namespace duckdb {

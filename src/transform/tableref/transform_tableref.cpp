@@ -1,6 +1,6 @@
 #include "duckdb/common/exception.hpp"
 #include "duckdb/parser/tableref.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 namespace duckdb {
 

@@ -1,4 +1,4 @@
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/tableref/pivotref.hpp"
 #include "duckdb/parser/parsed_data/create_type_info.hpp"
 #include "duckdb/parser/statement/create_statement.hpp"

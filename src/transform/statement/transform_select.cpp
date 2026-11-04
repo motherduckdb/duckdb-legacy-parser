@@ -1,5 +1,5 @@
 #include "duckdb/parser/statement/select_statement.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/common/string_util.hpp"
 
 namespace duckdb {

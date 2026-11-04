@@ -2,7 +2,7 @@
 #include "duckdb/common/pair.hpp"
 #include "duckdb/common/case_insensitive_map.hpp"
 
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/common/types/decimal.hpp"
 #include "duckdb/common/types/vector.hpp"
 #include "duckdb/parser/expression/constant_expression.hpp"

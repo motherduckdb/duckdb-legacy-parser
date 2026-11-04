@@ -1,6 +1,6 @@
 #include "duckdb/parser/statement/drop_statement.hpp"
 #include "duckdb/main/secret/secret_manager.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/parsed_data/extra_drop_info.hpp"
 #include "duckdb/parser/tableref/basetableref.hpp"
 

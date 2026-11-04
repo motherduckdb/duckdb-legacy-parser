@@ -1,4 +1,4 @@
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 
 #include "duckdb/parser/expression/list.hpp"
 #include "duckdb/parser/query_node/delete_query_node.hpp"

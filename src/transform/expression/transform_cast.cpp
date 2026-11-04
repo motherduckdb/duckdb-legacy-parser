@@ -1,7 +1,7 @@
 #include "duckdb/common/limits.hpp"
 #include "duckdb/parser/expression/cast_expression.hpp"
 #include "duckdb/parser/expression/constant_expression.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/function/cast/default_casts.hpp"
 #include "duckdb/common/operator/cast_operators.hpp"
 #include "duckdb/common/types/blob.hpp"

@@ -3,7 +3,7 @@
 #include "duckdb/parser/expression/function_expression.hpp"
 #include "duckdb/parser/statement/create_statement.hpp"
 #include "duckdb/parser/tableref/basetableref.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/common/exception/binder_exception.hpp"
 
 namespace duckdb {

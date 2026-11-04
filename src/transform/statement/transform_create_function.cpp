@@ -2,7 +2,7 @@
 #include "duckdb/function/table_macro_function.hpp"
 #include "duckdb/parser/parsed_data/create_macro_info.hpp"
 #include "duckdb/parser/statement/create_statement.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/expression/columnref_expression.hpp"
 
 namespace duckdb {

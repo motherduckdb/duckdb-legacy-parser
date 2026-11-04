@@ -1,4 +1,4 @@
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/query_node/merge_query_node.hpp"
 #include "duckdb/parser/statement/merge_into_statement.hpp"
 #include "nodes/parsenodes.hpp"

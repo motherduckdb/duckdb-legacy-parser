@@ -1,5 +1,5 @@
 #include "duckdb/parser/parsed_expression.hpp"
-#include "duckdb/parser/transformer.hpp"
+#include "legacy_parser/transformer.hpp"
 #include "duckdb/parser/query_node/select_node.hpp"
 #include "duckdb/parser/expression_map.hpp"
 #include "duckdb/parser/expression/function_expression.hpp"
